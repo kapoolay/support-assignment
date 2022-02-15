@@ -1,0 +1,26 @@
+Hi Bob,
+
+Thank you for reaching out to Streamlit Support! I appreciate you providing the links and information needed for us to troubleshoot on our end.
+
+Your program to prompt the user for parameters is perfect and from there we were able to produce a working program for you.
+
+Steps:
+1. We assign the user's input that we received from the selection prompt to a variable (site_url). Please note the user's choice was stored in the variable "status_code".
+--
+site_url = f"https://http.cat/{status_code}"
+--
+
+2. We then use "st.image" to render the requested image using the value we stored in site_url.
+--
+st.image(site_url, caption='Cat')
+--
+
+You can find the documentation on the "st.image" method here: https://docs.streamlit.io/library/api-reference/media/st.image
+
+Attached is the full program. Please feel free to reach out to us if you have any questions or issues.
+
+Best Regards,
+
+Kevin Capule
+support@streamlit.io
+
